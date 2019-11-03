@@ -59,7 +59,7 @@ namespace EnhancedInvoice
             // Aufruf durch den Indexer
              Console.WriteLine(myInvoice[1].SumPrice);
 
-            // Ausgabe über ToString
+            // Ausgabe über ToString...
             Console.WriteLine(myInvoice.ToString());
             Console.WriteLine(myBase.ToString());
 
