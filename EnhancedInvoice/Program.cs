@@ -51,10 +51,13 @@ namespace EnhancedInvoice
             Invoice myBase = myInvoice;
 
             // Aufruf durch das überschriebene Property
-            Console.WriteLine(myInvoice.Items[1].SumPrice);
+            Console.WriteLine(((EnhancedInvoiceItem)myInvoice.Items[1]).SumPrice);
+
+
+            Console.WriteLine(myInvoice.TotalSum);
 
             // Aufruf durch den Indexer
-            Console.WriteLine(myInvoice[1].SumPrice);
+             Console.WriteLine(myInvoice[1].SumPrice);
 
             // Ausgabe über ToString
             Console.WriteLine(myInvoice.ToString());
